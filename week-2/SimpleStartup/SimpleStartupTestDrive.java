@@ -1,10 +1,15 @@
+import java.util.ArrayList;
+
 public class SimpleStartupTestDrive {
     public static void main(String[] args) {
         SimpleStartup dot = new SimpleStartup();
-        int[] locations = {2, 3, 4};
+        ArrayList<String> locations = new ArrayList<>();
+        locations.add("2");
+        locations.add("3");
+        locations.add("4");
         dot.setLocationCells(locations);
 
-        int userGuess = 2;
+        String userGuess = "2";
         String result = dot.checkYourself(userGuess);
         String testResult = "failed";
 
